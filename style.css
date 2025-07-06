@@ -36,10 +36,26 @@ nav a {
     font-weight: bold;
 }
 
+main,footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0.5rem;
+    background-color: #106EBE;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+main {
+    text-align: center;
+}
+
 .hero {
     height: 90vh;
     display: flex;
     background-color: #E9F1FA;
+    width: 100%;
     animation: hero 3s linear 0s;
 }
 
@@ -49,10 +65,6 @@ nav a {
     overflow: hidden;
    /* background-color: white; */
     margin-right: 5rem;
-}
-
-.heroimage image {
-    box-shadow: 10px 10px 5px;
 }
 
 .herocontent {
@@ -96,6 +108,7 @@ nav a {
     justify-content: center;
     padding-top: 2rem;
     background-color: #106EBE;
+    width: 100%;
 }
 
 .productcards div {
@@ -108,6 +121,10 @@ nav a {
     font-weight: bold;
 }
 
+.productcards div:hover {
+    transform: scale(1.2);
+}
+
 .productcards div button {
     background-color: #106EBE;
     color: white;
@@ -117,16 +134,6 @@ nav a {
 
 p {
     margin: 1rem;
-}
-
-main,footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0.5rem;
-    background-color: #106EBE;
-    color: white;
-    font-weight: bold;
 }
 
 footer img {
@@ -147,5 +154,13 @@ footer img {
 }
 
 @media (min-width:600px) {
+    .heroimage img {
+        display: none;
+    }
     
-}
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    }
+        
