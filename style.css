@@ -102,6 +102,355 @@ main {
     transform: scale(1.5);
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    /* position: fixed; */
+    background-color: #106EBE;
+}
+
+header img {
+    height: 2rem;
+    width: 2rem;
+}
+
+header nav {
+    padding-right: 2.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+main,
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0.5rem;
+    background-color: #106EBE;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+main {
+    text-align: center;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    background-color: #E9F1FA;
+    width: 100%;
+    animation: hero 3s linear 0s;
+}
+
+.heroimage {
+    width: 70%;
+    /* border-radius: 10rem 0rem 10rem 0rem;*/
+    overflow: hidden;
+    /* background-color: white; */
+    margin-right: 5rem;
+}
+
+.herocontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    line-height: 1.5rem;
+    font-size: 20px;
+}
+
+.hero h1 {
+    color: #106EBE;
+}
+
+.hero p {
+    color: #106EBE;
+}
+
+.hero #swiftnet {
+    color: #0FFCBE;
+}
+
+.hero button {
+    background-color: #106EBE;
+    color: white;
+    height: 2.5rem;
+    width: 6.5rem;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.hero button:hover {
+    transform: scale(1.5);
+}
+
+.productcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+    background-color: #106EBE;
+    width: 100%;
+}
+
+.productcards div {
+    width: 20rem;
+    height: 15rem;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: #E9F1FA;
+    color: #106EBE;
+    font-weight: bold;
+}
+
+.productcards div:hover {
+    transform: scale(1.2);
+}
+
+.productcards div button {
+    background-color: #106EBE;
+    color: white;
+    height: 2rem;
+    width: 6.5rem;
+}
+
+p {
+    margin: 1rem;
+}
+
+footer img {
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem;
+}
+
+@keyframes hero {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+@media (min-width:600px) {
+    .heroimage img {
+        display: none;
+    }
+    
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    header nav {
+        flex-direction: column;
+    }
+}
+
+.productcards div {
+    width: 20rem;
+    height: 15rem;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: #E9F1FA;
+    color: #106EBE;
+    font-weight: bold;
+}
+
+.productcards div:hover {
+    transform: scale(1.2);
+}
+
+.productcards div button {
+    background-color: #106EBE;
+    color: white;
+    height: 2rem;
+    width: 6.5rem;
+}
+
+p {
+    margin: 1rem;
+}
+
+footer img {
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem;
+}
+
+@keyframes hero {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+@media (max-width:460px) {
+    .heroimage {
+         display: none;
+         width: 0%;
+     }
+    
+    .heroimage img {
+        display: none;
+    }
+    
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    header nav {
+        display: none;
+    }
+    
+    #hamburger {
+        display: none;
+    }
+    
+    #hamburger:checked + .menu-icon + .nav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu-icon {
+        font-size: 2rem;
+    }
+    
+    * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+   /* position: fixed; */
+   background-color: #106EBE;
+}
+
+header img {
+    height: 2rem;
+    width: 2rem;
+}
+
+header nav {
+    padding-right: 2.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+main,footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0.5rem;
+    background-color: #106EBE;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+main {
+    text-align: center;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    background-color: #E9F1FA;
+    width: 100%;
+    animation: hero 3s linear 0s;
+}
+
+.heroimage {
+    width: 70%;
+   /* border-radius: 10rem 0rem 10rem 0rem;*/
+    overflow: hidden;
+   /* background-color: white; */
+    margin-right: 5rem;
+}
+
+.herocontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    line-height: 1.5rem;
+    font-size: 20px;
+}
+
+.hero h1 {
+    color: #106EBE;
+}
+
+.hero p {
+    color: #106EBE;
+}
+
+.hero #swiftnet {
+    color: #0FFCBE;
+}
+
+.hero button {
+    background-color: #106EBE;
+    color: white;
+    height: 2.5rem;
+    width: 6.5rem;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.hero button:hover {
+    transform: scale(1.5);
+}
+
 .productcards {
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +502,7 @@ footer img {
     
 }
 
-@media (min-width:600px) {
+@media (max-width:460px) {
     .heroimage img {
         display: none;
     }
@@ -162,5 +511,30 @@ footer img {
         flex-direction: column;
         height: auto;
     }
+    
+    header nav {
+        flex-direction: column;
     }
-        
+    
+    .productcards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    footer img {
+        height: 2rem;
+        width: 2rem;
+    }
+    
+}
++!important#42445A(!important;)
